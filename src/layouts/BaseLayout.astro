@@ -1,0 +1,34 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SlowBall from "../components/SlowBall.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+// import Swup from "swup";
+// import SwupA11yPlugin from "@swup/a11y-plugin";
+// import SwupHeadPlugin from "@swup/head-plugin";
+// import SwupSlideTheme from "@swup/slide-theme";
+// src/pages/_app.ts
+import type { App } from "vue";
+import { plugin, defaultConfig } from "@formkit/vue";
+---
+
+<style></style>
+<html>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="min-h-screen">
+    <Header title={SITE_TITLE} />
+    <div class="flex min-h-screen flex-col justify-center">
+      <slot />
+    </div>
+    <Footer />
+    <!-- <script>
+      const swup = new Swup({
+        plugins: [new SwupSlideTheme()],
+      });
+    </script> -->
+    <!-- <SlowBall /> -->
+  </body>
+</html>

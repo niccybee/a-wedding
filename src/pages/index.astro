@@ -1,50 +1,50 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ScrollIcon from "../components/ScrollIcon.vue";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout>
+  <main id="swup" class="flex-1">
+    <section
+      class="container max-w-[640px] mx-auto grid items-center justify-center pt-6"
+    >
+      <a href="/rsvp">
+        <div
+          class="w-full z-1 bg-center min-h-[70vh] max-w-[720px] bg-cover rounded-lg flex items-center justify-center"
+          style="background-image:url('/main-img.png')"
+        >
+          <div class="w-full flex items-center justify-center pt-6 py-1">
+            <button
+              class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
+              >RSVP</button
+            >
+          </div>
+        </div>
+      </a>
+      <ScrollIcon/>
+      <article class="mt-16 prose bg-white rounded-md">
+        <h2>We cant wait to see you!</h2>
+        <p>
+          Georgia & Nic Wedding Welcome to the official Astro blog starter
+          template. This template serves as a lightweight, minimally-styled
+          starting point for anyone looking to build a personal website, blog,
+          or portfolio with Astro.
+        </p>
+        <p>
+          This template comes with a few integrations already configured in your
+          astro.config.mjs file. You can customize your setup with Astro
+          Integrations to add tools like Tailwind, React, or Vue to your
+          project. Here are a few ideas on how to get started with the template:
+          Edit this page in src/pages/index.astro Edit the site header items in
+          src/components/Header.astro Add your name to the footer in
+          src/components/Footer.astro Check out the included blog posts in
+          src/pages/blog/ Customize the blog post page layout in
+          src/layouts/BlogPost.astro Have fun! If you get stuck, remember to
+          read the docs or join us on Discord to ask questions. Looking for a
+          blog template with a bit more personality? Check out
+          astro-blog-template by Maxi Ferreira.
+        </p>
+      </article>
+    </section>
+  </main>
+</BaseLayout>

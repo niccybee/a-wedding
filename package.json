@@ -11,9 +11,27 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.6.11",
+    "@astrojs/image": "^0.11.6",
     "@astrojs/mdx": "^0.12.0",
+    "@astrojs/netlify": "^1.3.0",
     "@astrojs/rss": "^1.0.3",
-    "@astrojs/sitemap": "^1.0.0"
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/vue": "^1.2.2",
+    "@formkit/auto-animate": "^1.0.0-beta.6",
+    "@formkit/themes": "^1.0.0-beta.12",
+    "@formkit/vue": "^1.0.0-beta.12",
+    "@swup/head-plugin": "^1.2.1",
+    "animejs": "^3.2.1",
+    "astro": "^1.6.11",
+    "rellax": "^1.12.1",
+    "sharp": "^0.31.2",
+    "unocss": "^0.47.3",
+    "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "@swup/a11y-plugin": "^2.1.0",
+    "@swup/slide-theme": "^1.0.5",
+    "@unocss/preset-typography": "^0.47.3",
+    "swup": "^2.0.19"
   }
 }

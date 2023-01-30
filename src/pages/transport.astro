@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SlowBall from "../components/SlowBall.astro";
+---
+
+<BaseLayout>
+  <main id="swup" class="flex-1">
+    <section
+      class="container max-w-[640px] mx-auto grid items-center justify-center pt-6 z-10"
+    >
+      <a href="/rsvp">
+        <div
+          class="w-full bg-center w-full bg-cover rounded-lg flex items-center justify-center p-4 z-10 grayscale"
+          style="background-image:url('https://picsum.photos/seed/bus/600/200')"
+        >
+          <div class="w-full flex items-center justify-center pt-6 py-1">
+            <button
+              class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
+              >RSVP</button
+            >
+          </div>
+        </div>
+      </a>
+      <SlowBall />
+      <article class="mt-16 prose bg-white rounded-md bg-white rounded-md">
+        <h2>How to get there...</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A vero nobis
+          tempora, maiores officiis voluptatibus aliquam quo deserunt obcaecati
+          iure ipsam, necessitatibus quod, quisquam sequi natus vel. Aut,
+          temporibus similique?
+        </p>
+        <div class="w-full flex items-center justify-center pt-6 py-1">
+          <button
+            class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
+            >RSVP</button
+          >
+        </div>
+
+        <h2>Where to stay...</h2>
+        <p>
+          We encourage our guests to stay locally in the mornington peninsula
+          region. Here is a list of available accomadation
+        </p>
+      </article>
+    </section>
+  </main>
+</BaseLayout>

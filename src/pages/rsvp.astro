@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import RSVPForm from "../components/RSVPForm.vue";
+---
+
+<BaseLayout>
+  <main id="swup">
+    <section class="container flex items-center justify-center">
+      <article class="prose bg-white rounded-md pt-8">
+        <RSVPForm client:visible />
+      </article>
+    </section>
+  </main>
+</BaseLayout>
