@@ -25,6 +25,7 @@ let rsvpOptions = ["Can attend", "Can not attend"];
 let busSchema = [
   {
     $cmp: "FormKit",
+    validation: "required",
     props: {
       type: "radio",
       id: "bus",
@@ -35,13 +36,30 @@ let busSchema = [
         melbourne: "Melbourne",
         other: "Other...",
       },
-      validation: "required",
     },
   },
   {
     $cmp: "FormKit",
     if: "$get(bus).value == 'other'",
     props: { type: "text", label: "Where else would you like to go?" },
+  },
+];
+
+let allergySchema = [
+  {
+    $cmp: "FormKit",
+    validation: "required",
+    props: {
+      type: "radio",
+      id: "all",
+      label: "I have allergy requirements:",
+      options: { yes: "Yes", no: "No" },
+    },
+  },
+  {
+    $cmp: "FormKit",
+    if: "$get(all).value == 'yes'",
+    props: { type: "text", label: "Add details below:" },
   },
 ];
 </script>
@@ -77,13 +95,7 @@ let busSchema = [
         :options="rsvpOptions"
       />
       <FormKitSchema :schema="busSchema" />
-      <FormKit
-        type="textarea"
-        label="Dietary requirements:"
-        name="diet"
-        rows="1"
-        placeholder="Please add any dietary requirements"
-      />
+      <FormKitSchema :schema="allergySchema" />
       <FormKit
         type="textarea"
         label="Notes:"
