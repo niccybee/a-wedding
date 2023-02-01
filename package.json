@@ -23,6 +23,7 @@
     "@swup/head-plugin": "^1.2.1",
     "animejs": "^3.2.1",
     "astro": "^1.6.11",
+    "atropos": "^1.0.2",
     "rellax": "^1.12.1",
     "sharp": "^0.31.2",
     "unocss": "^0.47.3",

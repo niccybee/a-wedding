@@ -1,27 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import HomeHero from "../components/HomeHero.astro";
 import ScrollIcon from "../components/ScrollIcon.vue";
 ---
 
 <BaseLayout>
-  <main id="swup" class="flex-1">
+  <main id="swup" class="">
+    <HomeHero />
     <section
       class="container max-w-[640px] mx-auto grid items-center justify-center pt-6"
     >
-      <a href="/rsvp">
-        <div
-          class="w-full z-1 bg-center min-h-[70vh] max-w-[720px] bg-cover rounded-lg flex items-center justify-center"
-          style="background-image:url('/main-img.png')"
-        >
-          <div class="w-full flex items-center justify-center pt-6 py-1">
-            <button
-              class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
-              >RSVP</button
-            >
-          </div>
-        </div>
-      </a>
-      <ScrollIcon/>
+      <ScrollIcon />
       <article class="mt-16 prose bg-white rounded-md">
         <h2>We cant wait to see you!</h2>
         <p>

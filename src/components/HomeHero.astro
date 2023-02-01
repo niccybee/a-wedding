@@ -1,0 +1,58 @@
+---
+import "atropos/css";
+---
+
+<!-- <section
+  class="container max-w-[640px] bg-blue-5 mx-auto grid items-center justify-center pt-6"
+>
+  <a href="/rsvp">
+    <div
+      class="w-full z-1 bg-center min-h-[70vh] max-w-[640px] w-[640px] bg-cover rounded-lg flex items-center justify-center"
+      style="background-image:url('/main-img.png')"
+    >
+      <div class="min-w-full flex items-center justify-center pt-6 py-1">
+        <button
+          class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
+          >RSVP</button
+        >
+      </div>
+    </div>
+  </a>
+</section> -->
+<script>
+  import Atropos from "atropos";
+
+  const myAtropos = Atropos({
+    el: ".my-atropos",
+  });
+</script>
+<section
+  class="container max-w-[640px] mx-auto items-center justify-center pt-6"
+>
+  <a class="" href="/rsvp">
+    <div class="atropos my-atropos">
+      <!-- scale container (required) -->
+      <div class="atropos-scale">
+        <!-- rotate container (required) -->
+        <div class="atropos-rotate">
+          <!-- inner container (required) -->
+          <div class="atropos-inner">
+            <div
+              class="w-full px-4 z-1 bg-center min-h-[70vh] bg-cover rounded-lg flex items-center justify-center"
+              style="background-image:url('/main-img.png')"
+            >
+              <div
+                class="min-w-full flex items-center justify-center pt-6 py-1"
+              >
+                <button
+                  class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
+                  >RSVP</button
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</section>
