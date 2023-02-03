@@ -2,6 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import ArticleText from "../components/ArticleText.astro";
+import RsvpButton from "../components/RsvpButton.astro";
 ---
 
 <BaseLayout>
@@ -9,20 +11,29 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
     <section
       class="container max-w-[640px] mx-auto grid items-center justify-center pt-6"
     >
-      <div class="w-full flex items-center justify-center pt-6 py-1">
-        <h1>Invitation</h1>
-      </div>
-      <article class="mt-16 prose">
-        <h2>Georgia & Nic</h2>
-        <h3>Would like to cordially invite you...</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          deserunt nobis sit. Enim, quisquam consequuntur. Ab, dolorem. Quam
-          excepturi ullam tenetur! Voluptate tempora exercitationem commodi,
-          veritatis suscipit inventore in quae?
-        </p>
-      </article>
+      <ArticleText id="next">
+        <div class="w-full flex items-center justify-center pt-6 mt-0">
+          <h1 class="text-sm uppercase">Invitation</h1>
+        </div>
+
+        <h2 class="text-center text-4xl mt-2 font-light">Georgia & Nic</h2>
+        <h3>Would cordially like to invite you to join us...</h3>
+        <div class="gara mt-6">
+          <p>
+            4:30pm for a 5pm ceremony at Port Phillip Estate, Red Hill code:
+            Black tie
+          </p>
+          <p>Drinks and canapé service and dinner will be at the venue</p>
+          <p>
+            Reception to end at 11.30pm Recovery: 7th April at Sorrento Bowls
+            club 12pm
+          </p>
+        </div>
+        <p><strong>Dress:</strong></p>
+        <RsvpButton />
+      </ArticleText>
     </section>
+
     <section
       class="container max-w-[640px] mx-auto grid items-center justify-center pt-6"
     >

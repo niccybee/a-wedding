@@ -20,16 +20,16 @@
     "@formkit/auto-animate": "^1.0.0-beta.6",
     "@formkit/themes": "^1.0.0-beta.12",
     "@formkit/vue": "^1.0.0-beta.12",
+    "@swup/a11y-plugin": "^2.1.0",
     "@swup/head-plugin": "^1.2.1",
-    "astro": "^1.6.11",
+    "@swup/slide-theme": "^1.0.5",
+    "@vueuse/core": "^9.12.0",
+    "astro": "^2.0.6",
     "atropos": "^1.0.2",
     "rellax": "^1.12.1",
     "sharp": "^0.31.2",
     "unocss": "^0.47.3",
-    "vue": "^3.2.30",
-    "swup": "^2.0.19",
-    "@swup/a11y-plugin": "^2.1.0",
-    "@swup/slide-theme": "^1.0.5"
+    "vue": "^3.2.30"
   },
   "devDependencies": {
     "@unocss/preset-typography": "^0.47.3"

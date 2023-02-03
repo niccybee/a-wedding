@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ArticleText from "../components/ArticleText.astro";
+import LocationMap from "../components/LocationMap.astro";
+import MainBlock from "../components/MainBlock.astro";
+// import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<BaseLayout>
+  <main id="swup" class="flex-1 z-10">
+    <section
+      class="container max-w-[640px] mx-auto grid items-center justify-center pt-6"
+    >
+      <ArticleText
+        class="mt-16 prose"
+        style="background-image:url('/main-img.png')"
+      >
+        <h1 class="text-center">Venue</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam
+          a mollitia quas vel eum, est qui reiciendis itaque cumque veniam
+          ratione quod error dolore adipisci, praesentium fugiat. Beatae,
+          quidem!
+        </p>
+      </ArticleText>
+    </section>
+    <section
+      class="container max-w-[640px] w-full mx-auto grid items-center justify-center pt-6 px-1 rounded-md"
+    >
+    </section>
+    <section
+      class="container max-w-[640px] mx-auto grid items-center justify-center pt-6"
+    >
+      <ArticleText><LocationMap /></ArticleText>
+    </section>
+  </main>
+</BaseLayout>

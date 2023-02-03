@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); */
+/* smoooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* end smooth scroll */
 .container {
   width: 100%;
   margin-right: auto;
@@ -7,12 +12,36 @@
   padding-left: 1.5rem;
 }
 h1,
-h2,
 h3 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
 }
-
+.heading {
+  font-size: 3rem;
+}
+h2 {
+  font-family: "Great Vibes", "Cormorant Garamond", cursive;
+}
+h4,
+h5 {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+}
+h5,
+h6,
+article,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  font-weight: 300;
+}
+.gara,
+.gara * {
+  font-family: "Cormorant Garamond", serif;
+}
+.cursive {
+  font-family: "Great Vibes", cursive;
+}
 /* transitions */
 .transition-fade {
   transition: 0.4s;

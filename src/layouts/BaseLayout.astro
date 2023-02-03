@@ -1,4 +1,5 @@
 ---
+import "atropos/css";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -13,12 +14,21 @@ import type { App } from "vue";
 import { plugin, defaultConfig } from "@formkit/vue";
 ---
 
-<style></style>
+<script>
+  import Atropos from "atropos";
+
+  const myAtropos = Atropos({
+    el: ".my-atropos",
+  });
+</script>
 <html>
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="min-h-screen">
+  <body
+    class="min-h-screen bg-cover"
+    style="background-image:url('/bg-paper.jpeg)"
+  >
     <Header title={SITE_TITLE} />
     <div class="flex min-h-screen flex-col justify-center">
       <slot />

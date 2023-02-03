@@ -1,8 +1,15 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import { useScroll } from "@vueuse/core";
+
+const el = (ref < HTMLElement) | (null > null);
+const { x, y, isScrolling, arrivedState, directions } = useScroll(el);
+</script>
 <template>
-  <div class="scroll-container">
+  <div ref="el"></div>
+  <a href="#next" class="scroll-container" v-if="!isScrolling">
     <div class="field"><div class="mouse"></div></div>
-  </div>
+  </a>
 </template>
 <style scoped>
 .scroll-container {
