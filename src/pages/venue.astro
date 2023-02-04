@@ -7,7 +7,12 @@ import MainBlock from "../components/MainBlock.astro";
 ---
 
 <BaseLayout>
-  <main id="swup" class="flex-1 z-10">
+  <main
+    id="swup"
+    class="flex-1 z-10 bg-green-5 bg-cover"
+    style="background-image:url('./Functions_01.jpeg"
+  >
+    <div class="w-full bg-gradient-to-b from-white to-transparent h-16"></div>
     <section
       class="container max-w-[640px] mx-auto grid items-center justify-center pt-6"
     >
@@ -15,7 +20,10 @@ import MainBlock from "../components/MainBlock.astro";
         class="mt-16 prose"
         style="background-image:url('/main-img.png')"
       >
-        <h1 class="text-center">Venue</h1>
+        <h1 class="text-center text-sm uppercase">Venue</h1>
+        <h2 class="text-center text-4xl mt-2 font-light">
+          Port Phillip Estate, Red Hill
+        </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam
           a mollitia quas vel eum, est qui reiciendis itaque cumque veniam
