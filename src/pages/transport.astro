@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SlowBall from "../components/SlowBall.astro";
 import ArticleText from "../components/ArticleText.astro";
+import RsvpButton from "../components/RsvpButton.astro";
 ---
 
 <BaseLayout>
@@ -27,10 +28,7 @@ import ArticleText from "../components/ArticleText.astro";
                     <h3 class="py-3 text-white bg-black px-3 rounded-md mb-2">
                       Add your transport details to your RSVP
                     </h3>
-                    <button
-                      class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
-                      >RSVP</button
-                    >
+                    <RsvpButton />
                   </div>
                 </div>
               </a>
@@ -43,21 +41,16 @@ import ArticleText from "../components/ArticleText.astro";
         >
           <h1 class="text-center text-sm uppercase">Transport</h1>
           <h2 class="text-center mt-2 font-light">How to get there...</h2>
-          <p>
+          <p class="gara">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A vero
             nobis tempora, maiores officiis voluptatibus aliquam quo deserunt
             obcaecati iure ipsam, necessitatibus quod, quisquam sequi natus vel.
             Aut, temporibus similique?
           </p>
-          <div class="w-full flex items-center justify-center pt-6 py-1">
-            <button
-              class="border-1 bg-white border-black rounded-full px-8 py-4 hover:bg-black hover:text-white cursor-pointer transition 2s"
-              >RSVP</button
-            >
-          </div>
+          <RsvpButton />
 
           <h2 class="text-center font-light">Where to stay...</h2>
-          <p>
+          <p class="gara">
             We encourage our guests to stay locally in the mornington peninsula
             region. Here is a list of available accomadation
           </p>
