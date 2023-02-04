@@ -10,15 +10,29 @@ import vue from "@astrojs/vue";
 import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://example.com",
-  integrations: [vue({
-    appEntrypoint: "/src/pages/_app"
-  }), mdx(), sitemap(), Unocss({
-    presets: [presetTypography(), presetAttributify(), presetUno({
-      dark: "class"
-    })]
-  }), image()],
+  integrations: [
+    vue({
+      appEntrypoint: "/src/pages/_app",
+    }),
+    mdx(),
+    sitemap(),
+    Unocss({
+      presets: [
+        presetTypography(),
+        presetAttributify(),
+        presetUno({
+          dark: "class",
+        }),
+      ],
+    }),
+    image(),
+  ],
   output: "server",
-  adapter: netlify()
+  adapter: netlify({
+    dist: new URL("./dist", import.meta.url),
+  }),
 });
